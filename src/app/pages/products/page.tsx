@@ -134,7 +134,7 @@ const ProductsPage = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Products</h1>
 
       <button
@@ -172,7 +172,7 @@ const ProductsPage = () => {
         <p className="text-center text-gray-600">No products added yet.</p>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-4 py-6 bg-white mx-auto ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 py-6 bg-white mx-auto ">
             {paginatedProducts.map((product) => (
               <ProductCard
                 key={product.id}

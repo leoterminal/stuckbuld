@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto text-center">
+        <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <h2 className="text-4xl font-semibold text-gray-900">Why Choose Us?</h2>
           <div className="flex flex-wrap justify-center mt-12">
             <div className="w-full md:w-1/3 p-4">
@@ -79,7 +79,7 @@ export default function Home() {
 
       {/* Product Showcase Section */}
       <section className="bg-white py-20">
-        <div className="container mx-auto text-center">
+        <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <h2 className="text-4xl font-semibold text-gray-900">Our Top Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             {products.length ? (
@@ -107,8 +107,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto text-center">
+      <section className="py-20 bg-gray-50 ">
+        <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <h2 className="text-4xl font-semibold text-gray-900">What Our Customers Say</h2>
           <div className="flex flex-wrap justify-center mt-12">
             <div className="w-full md:w-1/3 p-4">
@@ -135,7 +135,7 @@ export default function Home() {
 
       {/* Call to Action Section */}
       <section className="bg-primary_orange py-20 text-white text-center">
-        <div className="container mx-auto">
+        <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto">
           <h2 className="text-4xl font-bold">Ready to Explore?</h2>
           <p className="text-lg mt-4">Find the best products at unbeatable prices.</p>
           <button className="mt-8 bg-white text-primbg-primary_orange py-3 px-6 rounded-lg hover:bg-gray-100 transition">
@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="bg-gray-900 py-8 text-white">
-        <div className="container mx-auto text-center">
+        <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <p>© 2024 NextCommerce. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-4">
             <a href="#" className="hover:text-gray-400">Privacy Policy</a>
