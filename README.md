@@ -37,22 +37,19 @@ This project is a Product Listing Platform built using the latest versions of Ne
 
 Navigate to the Project Directory
 
-    ```bash
-cd stuckbuld
+    ```bash cd stuckbuld
 
 Install Dependencies
 
-    ```bash
-npm install
-# or
-yarn install
+    ```bash npm install
+        # or
+        yarn install
 
 Run the Development Server
 
-```bash
-npm run dev
-# or
-yarn dev
+```bash npm run dev
+   # or
+    yarn dev
 
 The application will be available at http://localhost:3000.
 
@@ -74,10 +71,11 @@ npm start
 yarn start
 
 
-## Design Decisions
-### Local Storage: Products are stored in the browser's local storage to simplify data management and avoid the need for a remote database.
-### SEO Optimization: Next.js is used for server-side rendering to enhance SEO. Meta tags, structured data, and proper HTML tags are included to ensure that search engines can crawl and index the content effectively.
-### Tailwind CSS: Utilized for its utility-first approach, enabling rapid and responsive design without leaving the HTML.
-### Optimizations and Trade-offs
-### Performance: Next.js provides automatic code splitting and optimized performance out of the box. Tailwind CSS ensures that only the necessary styles are included in the final build.
-### Local Storage Limitations: Using local storage limits data size and is not suitable for production-level applications with large datasets or multi-user support.
+## Design Decisions.
+
+ Local Storage: Products are stored in the browser's local storage to simplify data management and avoid the need for a remote database.
+ SEO Optimization: Next.js is used for server-side rendering to enhance SEO. Meta tags, structured data, and proper HTML tags are included to ensure that search engines can crawl and index the content effectively.
+ Tailwind CSS: Utilized for its utility-first approach, enabling rapid and responsive design without leaving the HTML.
+ Optimizations and Trade-offs
+ Performance: Next.js provides automatic code splitting and optimized performance out of the box. Tailwind CSS ensures that only the necessary styles are included in the final build.
+ Local Storage Limitations: Using local storage limits data size and is not suitable for production-level applications with large datasets or multi-user support.
