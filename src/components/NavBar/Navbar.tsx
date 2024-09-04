@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,8 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  const router = window.location.origin;
+
   return (
     <nav
       className={`${
@@ -30,22 +33,25 @@ const Navbar: React.FC = () => {
       <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full text-left mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-xl font-bold text-gray-800">
           <Link href="/">
-            <div className='text-2xl'>SC</div>
+            <Image src={'https://res.cloudinary.com/duw4jtxls/image/upload/v1725289241/stuckbuld/kisspng-shadow-creek-high-school-national-secondary-school-5aff084a8b7c04.3429861115266632425713-removebg-preview_rnlbey.png'}
+            width={60}
+            height={20}
+            alt="logo"
+            className='w-[40px] h-[44px]'
+            />
           </Link>
         </div>
         <div className="hidden md:flex space-x-6">
           <Link href="/">
             <div className="text-gray-600 hover:text-blue-500">Home</div>
           </Link>
-          <Link href="/products">
+          <Link href="/pages/products">
             <div className="text-gray-600 hover:text-blue-500">Products</div>
           </Link>
-          <Link href="/about">
+          <Link href={`${router}/#about`}>
             <div className="text-gray-600 hover:text-blue-500">About</div>
           </Link>
-          <Link href="/contact">
-            <div className="text-gray-600 hover:text-blue-500">Contact</div>
-          </Link>
+          
         </div>
         <div className="md:hidden">
           <button
@@ -83,12 +89,10 @@ const Navbar: React.FC = () => {
           <Link href="/products">
             <div className="text-gray-600 hover:text-blue-500">Products</div>
           </Link>
-          <Link href="/about">
+          <Link href={`${router}/#about`}>
             <div className="text-gray-600 hover:text-blue-500">About</div>
           </Link>
-          <Link href="/contact">
-            <div className="text-gray-600 hover:text-blue-500">Contact</div>
-          </Link>
+          
         </div>
       </div>
     </nav>

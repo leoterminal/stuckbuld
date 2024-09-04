@@ -30,22 +30,22 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-white max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full text-left mx-auto py-20 rounded-2xl my-12 border">
-        <div className="">
+      <section className=" max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full text-left mx-auto bg-blue-50 py-20 rounded-2xl my-12 border  border-blue-800">
+        <div className=" w-full flex flex-col justify-center items-center h-full">
           <h1 className="text-3xl font-extrabold text-gray-900 mx-auto text-center">
             Welcome to Stuckbuld Catalogue
           </h1>
           <p className="text-lg text-gray-500 mt-4 text-center">
             Discover, Shop, and Enjoy the Best Products Online
           </p>
-          <Link href={'/pages/products'} className="mt-8 mx-auto block w-fit bg-primary_orange text-white py-3 px-6 rounded-[99px] transition">
+          <Link href={'/pages/products'} className="mt-8 mx-auto block w-fit bg-primary_orange text-white py-3 px-6 rounded-[99px] hover:scale-105 transition">
             Start Shopping
           </Link>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-pink-50">
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <h2 className="text-4xl font-semibold text-gray-900">Why Choose Us?</h2>
           <div className="flex flex-wrap justify-center mt-12">
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50 ">
+      <section className="py-20 bg-pink-50 ">
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
           <h2 className="text-4xl font-semibold text-gray-900">What Our Customers Say</h2>
           <div className="flex flex-wrap justify-center mt-12">
@@ -138,16 +138,16 @@ export default function Home() {
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto">
           <h2 className="text-4xl font-bold">Ready to Explore?</h2>
           <p className="text-lg mt-4">Find the best products at unbeatable prices.</p>
-          <button className="mt-8 bg-white text-primbg-primary_orange py-3 px-6 rounded-lg hover:bg-gray-100 transition">
+          <Link href={'/pages/products'} className="mt-8 block w-fit mx-auto text-white bg-slate-800 border border-slate-800 py-3 px-6 rounded-[30px] hover:scale-105 transition">
             Start Shopping Now
-          </button>
+          </Link>
         </div>
       </section>
 
       {/* Footer Section */}
       <footer className="bg-gray-900 py-8 text-white">
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-center">
-          <p>© 2024 NextCommerce. All rights reserved.</p>
+          <p>© 2024 Stuckbuld Cataloque. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-4">
             <a href="#" className="hover:text-gray-400">Privacy Policy</a>
             <a href="#" className="hover:text-gray-400">Terms of Service</a>

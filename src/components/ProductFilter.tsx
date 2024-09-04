@@ -22,7 +22,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ category, maxPrice, onCat
           <option value="Electronics">Electronics</option>
           <option value="Clothing">Clothing</option>
           <option value="Books">Books</option>
-          {/* Add more categories as needed */}
+          
         </select>
       </div>
 

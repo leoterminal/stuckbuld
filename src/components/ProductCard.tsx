@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onEdit, onDelete }) 
   return (
     <div
       key={product.id}
-      className="relative w-full max-w-[305px] h-[488px] bg-white rounded-[18.48px] border-2 border-[#f7f5f7] group hover:scale-105 hover:shadow-lg"
+      className="relative w-full max-w-[305px] h-[488px] bg-white rounded-[18.48px] border-2 border-[#f7f5f7] group hover:scale-105 hover:shadow-lg hover:border-2 hover:border-primary_orange"
     >
       <div className="w-full h-[303.12px] bg-[#f7f5f7] rounded-tl-[18.48px] rounded-tr-[18.48px] p-3">
         <img

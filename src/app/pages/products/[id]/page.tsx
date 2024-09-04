@@ -1,14 +1,14 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Head from 'next/head'; // Import Head from next/head
 import { notFound } from 'next/navigation';
+
 
 
 type Product = {
   id: string; 
   name: string;
   category: string;
-  price: number; // Ensure this is a number
+  price: number;
   description: string;
   imageUrl: string;
 };
@@ -17,6 +17,7 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const productId = params.id;
+
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -41,7 +42,7 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
   if (loading) {
     return (
       <div className='fixed inset-0 z-50 bg-gray-100 flex justify-center items-center min-h-screen'>
-        <div className="loader"></div>
+        <div className="loader">Loading...</div>
       </div>
     );
   }
@@ -68,13 +69,7 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
 
   return (
     <>
-      <Head>
-        <title>Stuckbuld Catalogue | {product.name}</title>
-        <meta name="description" content={product.description} />
-        <meta name="og:title" content={`Stuckbuld Catalogue | ${product.name}`} />
-        <meta name="og:description" content={product.description} />
-        <meta name="og:image" content={product.imageUrl} />
-      </Head>
+      
       <div className="max-w-2xl w-full mx-auto px-4 py-8 border shadow-md my-8">
         <div className="flex flex-col items-center">
           <div className="w-[300px] h-[300px]">

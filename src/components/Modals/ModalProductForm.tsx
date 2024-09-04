@@ -64,7 +64,7 @@ const ModalProductForm: React.FC<ModalProductFormProps> = ({
     try {
       productSchema.parse({
         ...product,
-        imageUrl: imagePreview || product.imageUrl, // Use imagePreview if available
+        imageUrl: imagePreview || product.imageUrl, 
       });
       return true;
     } catch (error) {
