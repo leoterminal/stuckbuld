@@ -37,17 +37,18 @@ This project is a Product Listing Platform built using the latest versions of Ne
 
 Navigate to the Project Directory
 
-    ```bash cd stuckbuld
+    ```bash 
+    cd stuckbuld
 
 Install Dependencies
 
-    ```npm install
+    npm install
         # or
         yarn install
 
 Run the Development Server
 
-```npm run dev
+   npm run dev
    # or
     yarn dev
 
@@ -56,18 +57,17 @@ The application will be available at http://localhost:3000.
 ## Building for Production
 To build the application for production, run:
 
-```
+
 npm run build
 # or
 yarn build
 
 
- Then, start the production server with:
+## Then, start the production server with:
 
-```
 npm start
 # or
-yarn start
+ yarn start
 
 
 ## Design Decisions.
