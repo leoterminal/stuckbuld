@@ -41,13 +41,13 @@ Navigate to the Project Directory
 
 Install Dependencies
 
-    ```bash npm install
+    ```npm install
         # or
         yarn install
 
 Run the Development Server
 
-```bash npm run dev
+```npm run dev
    # or
     yarn dev
 
@@ -56,7 +56,7 @@ The application will be available at http://localhost:3000.
 ## Building for Production
 To build the application for production, run:
 
-```bash
+```
 npm run build
 # or
 yarn build
@@ -64,8 +64,7 @@ yarn build
 
  Then, start the production server with:
 
-```bash
-
+```
 npm start
 # or
 yarn start
