@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { notFound } from 'next/navigation';
+import { notFound, useRouter } from 'next/navigation';
 
 
 
@@ -17,8 +17,9 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const productId = params.id;
+  const router = useRouter();
 
-
+  
   useEffect(() => {
     const fetchProduct = async () => {
       const storedProducts = localStorage.getItem('products');
@@ -54,7 +55,7 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
           <h2 className="text-xl font-bold mb-4">Product Not Found</h2>
           <p className="text-gray-600 mb-4">Sorry, the product you are looking for does not exist.</p>
           <button
-            onClick={() => window.history.back()}
+            onClick={() =>  router.push('/pages/product')}
             className="bg-primary_orange text-white py-2 px-4 rounded-[30px] transition"
           >
             Go Back
@@ -86,7 +87,7 @@ const ProductDetailPage = ({ params }: { params: { id: string } }) => {
             <p className="text-gray-700 text-base mb-6 text-justify">{product.description}</p>
             <div className="flex justify-center gap-4">
               <button
-                onClick={() => window.history.back()}
+                onClick={() =>  router.push('/pages/product')}
                 className="border-primary_orange border text-primary_orange py-2 px-12 rounded-[30px] transition"
               >
                 Go Back
